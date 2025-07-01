@@ -1,2 +1,2 @@
-# Notes
-# Assignments
+# [Notes](Notes.md)
+# [Assignments](Assignments.md)
