@@ -13,7 +13,7 @@ Every HTML file should start with a basic structure:
     <title>My First Web Page</title>
   </head>
   <body>
-    <!-- Content goes here -->
+    <!-- Content goes here... -->
   </body>
 </html>
 ```
