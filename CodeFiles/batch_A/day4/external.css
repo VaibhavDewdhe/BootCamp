@@ -1,0 +1,19 @@
+ span {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      p{
+        background-color: darkgrey;
+      }
+      #first-paragraph{
+        color: red;
+      }
+      .first{
+        color: green;
+      }
+      .even{
+        color: blue;
+      }
+      #second{
+        background-color: yellow;
+      }
