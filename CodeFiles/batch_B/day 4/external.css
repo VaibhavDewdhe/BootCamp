@@ -1,0 +1,31 @@
+/* this is a universal selector */
+
+* {
+  background-color: yellow;
+}
+
+/* this is tag selector */
+span {
+  font-weight: 700;
+  font-size: 32px;
+}
+h1 {
+  color: blue;
+}
+
+
+/* id selector */
+#third {
+  background-color: red;
+}
+
+
+/* class selector */
+.even {
+  background-color: white;
+}
+
+div {
+  background-color: black;
+  color: white;
+}
