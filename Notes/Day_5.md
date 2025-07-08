@@ -31,14 +31,14 @@
 - grid
 
 ## inline
-- the element with the display property as inline only takes the size of it's content
+- the element with the display property as inline only takes the size(width and height) of it's content
 - It can't work with css properties like width and height
 
 ## block
 - the element with the display property as block takes full width of it's parent.
 
 ## inline-block
-- the element with the display property as inline-block possesses the behaviour both inline and block. i.e. it takes by default the space of it's content only and allow other elements to be in the same line as itself.
+- the element with the display property as inline-block possesses the behaviour of both inline and block. i.e. it takes by default the space of it's content only and allow other elements to be in the same line as itself.
 - we can also give width and height manually.
 
 ## flex

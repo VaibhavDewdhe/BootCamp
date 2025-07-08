@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline</title>
+    <style>
+        span, div{
+            border: 2px solid red;
+           
+        }
+        #parent{
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        #child{
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <span>abc</span>
+    <span>xyz</span>
+    <div>abc
+        <br>sdfsd
+    </div>
+    <div>xyz</div>
+
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</body>
+</html>
