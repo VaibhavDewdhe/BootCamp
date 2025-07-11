@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* #parent {
+        border: 3px solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 200px;
+        gap: 30px;
+        padding: 30px;
+      }
+      #parent div {
+        background-color: beige;
+        border: 2px solid blue;
+      }
+
+      #first {
+        grid-area: 1/ 1/ 2/ 3;
+      }
+      #second {
+        grid-row-start: 1;
+        grid-row-end: 3;
+      } 
+ */
+
+      #parent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        gap: 20px;
+        grid-template-areas: 
+        "first first second"
+        "third forth second";
+      }
+
+      #parent > div{
+        background-color: red;
+        
+      }
+      #first{
+        grid-area: first;
+      }
+      #second{
+        grid-area: second;
+      }
+
+      #third{
+        grid-area: third;
+      }
+
+      #forth{
+        grid-area: forth;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+        <div id="forth"></div>
+    </div>
+  </body>
+</html>

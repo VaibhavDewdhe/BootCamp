@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header #logo {
+  width: 70px;
+  border-radius: 50%;
+}
+
+#searchImg {
+  width: 50px;
+  border-radius: 50%;
+}
+
+header #logoSection,
+header #search {
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+header li {
+  width: 70px;
+  height: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #blog {
+  background-color: rgb(255, 123, 0);
+  height: 30px;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: rgb(23, 163, 216);
+  color: white;
+}
+
+header #blog a {
+  color: white;
+}
+
+#section1 {
+  background-image: url(../../batch_A/day7/images/animatedCity.gif);
+  height: 70vh;
+  background-size: 100% 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 70%; */
+}
+
+#section1 div {
+  width: 60%;
+  text-align: center;
+}
+
+#section1 div * {
+  margin-bottom: 30px;
+}
+
+#section1 div h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#section1 div button {
+  padding: 10px 16px;
+  text-transform: uppercase;
+  background-color: rgb(255, 123, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#services > div {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 70px;
+}
+
+#services button {
+  background-color: rgb(23, 163, 216);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+}
+#services article {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+#services article * {
+  margin-bottom: 20px;
+}
+
+#services img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+#services span {
+  color: rgb(4, 131, 194);
+  font-weight: 700;
+}
+
+#portfolio {
+  background-color: rgb(46, 62, 78);
+}
+
+#portfolio > div {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  color: white;
+}
+
+#portfolioHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+#articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+#portfolio #portfolioHeader span {
+  font-size: 30px;
+  font-weight: 700;
+  color: orange;
+}
+
+#portfolio #portfolioHeader button {
+  padding: 10px 15px;
+  background-color: rgb(4, 131, 194);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+#portfolio #articles article {
+  width: 300px;
+  text-align: center;
+}
+
+#portfolio #articles article * {
+  margin-bottom: 20px;
+}
+#portfolio #articles article img {
+  width: 100%;
+}
+
+#testimonials {
+  text-align: center;
+}
+
+#testimonials > div {
+  width: 80%;
+  margin: auto;
+}
+
+#testimonials > div > * {
+  margin: 20px 0;
+}
+#testimonials h2 {
+  color: rgb(4, 131, 194);
+  text-transform: uppercase;
+}
+
+#testimonials #para {
+  font-size: 28px;
+  font-weight: 600;
+  color: gray;
+}
+
+#ceo {
+  color: orange;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#images div {
+  border-bottom: 10px solid gray;
+}
+#images img {
+  margin-bottom: 20px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#images div:hover {
+  border-bottom: 10px solid orange;
+}
+
+/* footer css */
+footer {
+  background-color: rgb(46, 62, 78);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 5%;  
+  justify-content: center;
+}
+
+footer img{
+  width: 50px;
+}
+
+footer h3 {
+  color: rgb(229, 149, 2);
+  font-size: 28px;
+}
+
+
+footer a, label{
+  color: rgb(43, 171, 222);
+}
+
+
+footer .feeds > div{
+  margin: 20px 0;
+}
+
+footer .newsletter > *{
+  margin-bottom: 20px;
+}
+
+footer .newsletter form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer form input{
+  padding: 10px;
+}
+
+footer form input[type="submit"]{
+  width: 100px;
+  color: white;
+  background-color: rgb(43, 171, 222);
+  border: none;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+
+footer .projects > *{
+  margin-bottom: 20px;
+}
+
+footer .projects > div, footer .contacts > div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .projects .box{
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  flex-shrink: 0;
+}
+
+footer .contacts > div{
+  margin-bottom: 20px;
+}
+
+
+@media (max-width:712px){
+  header, #services >div{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul{
+    gap: 5px;
+  }
+}

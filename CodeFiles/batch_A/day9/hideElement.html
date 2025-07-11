@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            
+        }
+        div{
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+        }
+
+        #black{
+            background-color: black;
+            /* display: none; */
+            visibility: hidden;
+        }
+        #white{
+            background-color: brown;
+        }
+
+        @media print{
+            body *{
+                display: none;
+            }
+            #black{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="black">I am black</div>
+    <div id="white">I am brown</div>
+</body>
+</html>
