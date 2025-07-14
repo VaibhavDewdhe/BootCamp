@@ -1,0 +1,26 @@
+<script>
+  let age = prompt("Age: ");
+
+  if (age > 18) {
+    let height = prompt("height: ");
+    if (height > 6) {
+      let weight = prompt("weight: ");
+      if (weight > 60) {
+        alert("Welcome India army....");
+      } else {
+        alert("Go to home...");
+      }
+    } else {
+      let isWillingToServe = confirm(
+        "Are you willing to work for a non-soldier post?"
+      );
+      if (isWillingToServe) {
+        alert("Welcome India army....");
+      } else {
+        alert("Go to home...");
+      }
+    }
+  } else {
+    alert("Go to home...");
+  }
+</script>
