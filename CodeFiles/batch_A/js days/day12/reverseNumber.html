@@ -1,0 +1,16 @@
+<script>
+    let n = 12241;
+
+    let org = n;
+
+    let rev = 0;        
+
+    while(n > 0){
+        let digit = n%10;
+        n = parseInt(n/10);
+        rev = rev * 10 + digit;
+    }
+
+
+    alert(org==rev ? "Palindrome" : "Not Palindrome");
+</script>

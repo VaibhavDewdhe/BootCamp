@@ -1,0 +1,20 @@
+<script>
+  let n = prompt("Enter the number: ");
+
+  n = parseInt(n);
+
+  //   let count = 0;
+
+  //   do {
+  //     // n > 0
+  //     n = parseInt(n / 10);
+  //     count++;
+  //   } while (n != 0);
+
+  let count;
+  
+  for (count = 0; n != 0; count++) {
+    n = parseInt(n / 10);
+  }
+  alert(count);
+</script>
