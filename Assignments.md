@@ -2,3 +2,5 @@
 ## [Day 2 (Date: 02-06-2025)](./Assignments/Day_2.md)
 
 ## [Day 12 (Date: 14-07-2025)](./Assignments/day12JsLooping.md)
+
+## [Looping and patterns](./Assignments/Lopping%20and%20patterns.pdf)
