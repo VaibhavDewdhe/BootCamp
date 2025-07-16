@@ -1,0 +1,22 @@
+<script>
+  //   let a = [59, 'Vaibhav', true];
+  //   console.log(a);
+  //   a.push("Rohit")
+  //   console.log(a);
+  //   a.pop();
+  //   console.log(a);
+
+  let smallAlphabets = [];
+  for (let i = 97; i <= 122; i++) {
+    smallAlphabets.push(String.fromCharCode(i));
+  }
+
+  let capitalAlphabets = [];
+
+  for (let i = 0; i < smallAlphabets.length; i++) {
+    capitalAlphabets.push(String.fromCharCode(smallAlphabets[i].charCodeAt(0)-32));
+  }
+
+  console.log(capitalAlphabets);
+  
+</script>

@@ -1,0 +1,40 @@
+<script>
+
+    //input
+    //created new empty array;
+    let players = [];
+    for(let i=1; i<=3; i++){
+        //new empty player object
+        let player = {};
+
+        //took player name input and added it to the newly created player object
+        player.name = prompt(`Player no. ${i} Name: `);
+        //took player Joursey no. input and added it to the newly created player object
+        player.jNo = parseInt(prompt(`Player no. ${i} Joursey No.: `));
+
+        //now adding newly created player object to the players array
+        players.push(player);
+    }
+
+
+    //output
+    for(let i=0; i<players.length; i++){
+        //storing specific index element to a new variable for simplification
+        let plr = players[i];
+
+        //now displaying player details using that variable
+        console.log(plr.jNo);
+        console.log(plr.name);
+        console.log("---------------------------");
+
+
+        //Without creating a new variable printing details
+        //directly using index
+
+        // console.log(players[i].jNo);
+        // console.log(players[i].name);
+        // console.log("---------------------------");
+        
+    }
+
+</script>

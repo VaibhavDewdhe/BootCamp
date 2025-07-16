@@ -1,0 +1,12 @@
+<script>
+    for(let i=1; i<=5; i++){
+        let k = i;
+        let s = '';
+        for(let j=1; j<=9; j++){
+            if(j>=6-i && j<=4+i)
+                s = s + String.fromCharCode((j<5 ? k-- : k++)+64) +" ";
+        }
+
+        console.log(s);
+    }
+</script>
