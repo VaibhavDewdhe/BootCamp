@@ -1,0 +1,13 @@
+<script>
+  let name = prompt("Enter the name: ");
+
+  let capital = "";
+  for (let i = 0; i < name.length; i++) {
+    let ch = name[i];
+    if (ch.charCodeAt(0) >= 97 && ch.charCodeAt(0) <= 122)
+      ch = String.fromCharCode(ch.charCodeAt(0) - 32);
+    capital = capital + ch;
+  }
+
+  alert(capital);
+</script>

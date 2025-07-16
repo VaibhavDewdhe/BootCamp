@@ -1,0 +1,39 @@
+<script>
+    // let alphabets = 'abcdef';
+
+    // for(let i = 0; i < alphabets.length ; i++)
+    //     console.log(alphabets.charAt(i));
+
+
+    let alphabets = [];
+    for(let i = 97; i<=122; i++){
+
+        let char = String.fromCharCode(i);
+        alphabets.push(char);
+        
+    }
+
+    let capitalAlphabets = new Array();
+    for(let i=0; i<alphabets.length; i++){
+        //step 1: taking single element in a variable
+        let smallLetter = alphabets[i];
+
+        //step 2: now finding character code of that element
+        //but this char code is of small letters
+        let charCodeOfSmallLetter = smallLetter.charCodeAt(0);
+
+        //step 3: substracting charCode by 32 to get it's respective capital letter
+        let capitalCharCode = charCodeOfSmallLetter - 32;
+
+
+        //step 4: converting this charCode into character
+        let capitalLetter = String.fromCharCode(capitalCharCode);
+
+
+        capitalAlphabets.push(capitalLetter);
+    }
+    
+    console.log(capitalAlphabets);
+    
+        
+</script>

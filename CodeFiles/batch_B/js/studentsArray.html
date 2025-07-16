@@ -1,0 +1,31 @@
+<script>
+
+    //input
+    let n = prompt("Enter the number of students: ");
+
+    let students = [];
+    for(let i=0; i<n; i++){
+        let rollNo = prompt("Enter roll no: ");
+        let name = prompt(`name of student with roll no ${rollNo}: `)
+
+        let student = {};
+
+        student.rNo = rollNo;
+        student.sName = name;
+
+        students.push(student);
+    }
+
+
+
+    //output
+
+    for(let i=0; students.length; i++){
+        let std = students[i];
+
+        console.log("roll no: " + std.rNo);
+        console.log("Name: " + std.sName);
+        console.log("-------------");
+        
+    }
+</script>
