@@ -1,0 +1,44 @@
+<script>
+  //   print only the duplicate values in the array
+  let a = [11, 22, 15, 710, 30, 4, 22, 15, 30, 30, 22];
+
+  console.log("original array: ");
+  
+  console.log(a);
+  //   step 1: sort the elements in any order
+  for (let i = 0; i < a.length; i++) {
+    for (let j = i + 1; j < a.length; j++) {
+      if (a[i] > a[j]) {
+        let temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+      }
+    }
+  }
+
+  console.log("after sorting");
+  
+  console.log(a);
+
+
+  console.log("All the duplicate elements: ");
+  
+  //step 2: find the occurrence of each element
+  let count = 1;
+  let i;
+  for (i = 0; i < a.length - 1; i++) {
+    if (a[i] == a[i + 1]) {
+      count++;
+    } else {
+      //step 3: check if count is greater than 1
+      //means checking if element is occurred more than once
+      if (count > 1) {
+        console.log(a[i]);
+      }
+      count = 1;
+    }
+  }
+  if (count > 1) {
+    console.log(a[i]);
+  }
+</script>

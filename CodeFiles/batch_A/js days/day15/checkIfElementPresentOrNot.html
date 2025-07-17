@@ -1,0 +1,19 @@
+<script>
+  let a = [11, 22, 15, 710, 30, 4, 22, 15, 30, 30, 22];
+
+  let n = prompt("Enter the number: ");
+
+  let flag = false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] == n) {
+      flag = true;
+      break;
+    }
+  }
+
+  if (flag) {
+    alert("yes, number is present");
+  } else {
+    alert("no,  number is not present");
+  }
+</script>

@@ -1,0 +1,54 @@
+<!-- <script>
+  // let a = 10;
+  // let b = 20;
+
+    //a basic js function
+  function greet() {
+    alert("Hello world, I am the first function");
+  }
+
+  //function calling
+   greet();
+
+  //hoisting in js
+</script> -->
+
+<!-- <script>
+  let a = 20;
+  let b = 30;
+
+  function addition(first, second) {
+    let sum = first + second;
+    alert(sum);
+  }
+
+  addition(a, b);
+  addition("44", 22);
+</script> -->
+
+<script>
+  let a = [4, 454, 76, 3, 77, 424];
+  let b = [76, 234, 7, 9, 343, 6, 8, 8];
+
+  console.log(typeof(a));
+  
+
+  //function defination 
+  function sortArray(a) {
+    for (let i = 0; i < a.length; i++) {
+      for (let j = i + 1; j < a.length; j++) {
+        if (a[i] > a[j]) {
+          let temp = a[i];
+          a[i] = a[j];
+          a[j] = temp;
+        }
+      }
+    }
+  }
+
+  //function calling
+  sortArray(a);
+  sortArray(b);
+  console.log(a);
+  console.log(b);
+</script>
