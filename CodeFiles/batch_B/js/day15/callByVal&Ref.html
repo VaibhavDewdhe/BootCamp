@@ -1,0 +1,31 @@
+<!-- <script>
+    //example of call by value
+
+    let a = 12;
+
+    function change(a){
+        a = a + 10;
+        console.log(a);         //22
+    }
+    change(a);
+    console.log(a);             //12
+    
+
+    //final output:
+    //22
+    //12
+</script> -->
+
+<script>
+    //example of call by reference
+    let a = [7, 12, 8];
+
+    function change(x){
+        x[2] = "8a"
+        console.log(x);
+    }
+
+    change(a);
+
+    console.log(a);
+</script>
