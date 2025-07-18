@@ -4,3 +4,5 @@
 ## [Day 12 (Date: 14-07-2025)](./Assignments/day12JsLooping.md)
 
 ## [Looping and patterns](./Assignments/Lopping%20and%20patterns.pdf)
+
+## [Functions](./Assignments/functions.md)
