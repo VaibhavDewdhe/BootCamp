@@ -1,0 +1,24 @@
+<script>
+  let a = parseInt(prompt("Enter the first number: "));
+  let b = parseInt(prompt("Enter the second number: "));
+  let choice = parseInt(
+    prompt(
+      "1: Addition\n2: Substraction\n3: Mulptiplication\nEnter you choice: "
+    )
+  );
+
+  switch (choice) {
+    case 1:
+      alert(a + b);
+      break;
+    case 2:
+      alert(a - b);
+      break;
+    case 3:
+      alert(a * b);
+      break;
+
+    default:
+      alert("Invalid choice: ");
+  }
+</script>

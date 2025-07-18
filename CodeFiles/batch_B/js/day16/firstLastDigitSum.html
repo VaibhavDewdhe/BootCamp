@@ -1,0 +1,25 @@
+<script>
+    let n = 6826440;
+
+    
+
+
+    let ans = getSum(n);
+    alert(ans);
+    
+
+
+
+
+
+    //function declaration
+    function getSum(num){
+        let lastDigit = num % 10;
+
+        while(num>9)
+            num = parseInt(num/10);
+
+        let sum = num + lastDigit;
+        return sum;
+    }
+</script>

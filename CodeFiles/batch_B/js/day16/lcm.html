@@ -1,0 +1,22 @@
+<script>
+    //4 : 4, 8, 12, 16, 20
+    //6 : 6, 12, 18
+
+    let x = 21;
+    let y = 6;
+
+    let mini = min(x,y);
+
+    while(true){
+        if(mini%x == 0 && mini % y == 0){
+            alert(mini);
+            break;
+        }
+        
+        mini++;
+    }
+
+    function min(a, b){
+        return a < b ? a : b;
+    }
+</script>

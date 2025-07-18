@@ -1,0 +1,28 @@
+<script>
+
+    //function declaration
+    //this functions returns factorial of any number;
+  function getFactorial(n) {
+    let fact = 1;
+    while (n > 0) {
+      fact = fact * n--;
+    }
+    return fact;
+  }
+
+  let n = 2;
+  let org = n;
+
+  let sum = 0;
+  while (n > 0) {
+    //0
+    let digit = n % 10; //4
+    
+    sum = sum + getFactorial(digit); //145
+    n = parseInt(n / 10);
+  }
+
+
+
+  alert(sum == org ? "strong" : "Not strong")
+</script>
