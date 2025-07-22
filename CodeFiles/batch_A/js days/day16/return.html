@@ -1,0 +1,15 @@
+<script>
+  function getFactorial(n) {
+    let fact = 1;
+    // while(n > 0){
+    //     fact = fact * n;        // fact *= n;
+    //     n--;
+    // }
+    while (n > 0) fact *= n--;
+
+    return fact;
+  }
+
+  console.log(getFactorial(5));
+  
+</script>

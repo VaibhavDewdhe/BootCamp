@@ -1,0 +1,37 @@
+<script>
+  // Write a function that takes two arrays and returns their merged version (without duplicates).
+
+  let a = [1, 2, 3, 4, 19, 2, 6, 2, 19];
+  let b = [2, 4, 6, 8, 2, 4, 6];
+
+  merge(a, b);
+  //c: 1, 2, 3, 4, 19, 6
+
+  function merge(x, y) {
+    let c = [];
+    ma(c, x);
+
+    ma(c, y);
+
+    c.forEach((e, i) => console.log(i + " : " + e));
+  }
+
+  function ma(m, n) {
+    for (let i = 0; i < n.length; i++) {
+      if (!isPresent(m, n[i])) {
+        m.push(n[i]);
+      }
+    }
+  }
+
+  function isPresent(a, n) {
+    //12345     10
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] == n) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+</script>
