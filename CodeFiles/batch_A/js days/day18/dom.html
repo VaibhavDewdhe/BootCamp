@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //creating
+    let btn = document.createElement("button");
+    btn.innerHTML = "click here";
+
+    //capturing
+    let body = document.body;
+    body.append(btn);
+
+    btn.addEventListener("click", () => {
+      //   alert("tnx, for clicking...");
+      //   for(let i=1; i<=10; i++){
+      //     console.log(i);
+      //   }
+      //   body.style.backgroundColor = "black";
+      //   alert("Are main to pura kala ho gaya, yaar...");
+
+      if (body.style.backgroundColor == "black")
+        body.style.backgroundColor = "white";
+      else body.style.backgroundColor = "black";
+    });
+  </script>
+</html>
