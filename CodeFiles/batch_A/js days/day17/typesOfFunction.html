@@ -1,21 +1,23 @@
 <script>
-    //storing an anonymous function inside a variable
-    let x = function (n){
-        alert(n);
-    }
+  //storing an anonymous function inside a variable
+  let x = function () {
+    return 12;
+  };
+  //arrow function
+  let y = () => {
+    return "hello";
+  };
+  // let y = () =>  "arrow";
 
-    x(5);
+//   alert(y());
 
-    //arrow function
+  //odd even using arrow
+  let num = 5657;
 
-    let yy = 
-    function aa(n){
-        alert(n);
-    }
+  let fun = (n) => {
+    alert(n % 2 == 0 ? "even" : "odd");
+  };
 
-    aa(53);
 
-    function xx(){
-        return 386;
-    }
+  fun(num)
 </script>

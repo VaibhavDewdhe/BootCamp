@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const btn = document.createElement("button");
+      btn.textContent = "Change Color";
+
+      const body = document.body;
+
+      body.append(btn);
+
+      btn.addEventListener("click", () => {
+        if (body.style.backgroundColor == "black")
+          body.style.backgroundColor = "pink";
+        else body.style.backgroundColor = "black";
+      });
+
+      btn.addEventListener("mouseenter", function () {
+        btn.style.backgroundColor = "green";
+        btn.style.color = "white";
+      });
+
+      btn.addEventListener("mouseleave", function () {
+        btn.style.backgroundColor = "white";
+        btn.style.color = "black";
+      });
+
+      btn.setAttribute("id", "changeButton");
+    </script>
+  </body>
+</html>
