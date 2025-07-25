@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      form {
+        border: 2px solid red;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: auto;
+      }
+      form input {
+        margin-bottom: 10px;
+      }
+
+      form label {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">name</label>
+      <input type="text" id="name" onkeyup="isNameValid()"/>
+
+      <label for="email">email</label>
+      <input type="email" name="email" id="email" onblur="isEmailValid()"/>
+
+      <label for="npass">New Password</label>
+      <input type="password" name="npass" id="npass" onblur="isPassValid(this)"/>
+
+      <label for="cnpass">Confirm New Password</label>
+      <input type="password" name="cnpass" id="cnpass" onblur="isPassMatching(this)"/>
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+  <script src="./validation.js"></script>
+</html>
