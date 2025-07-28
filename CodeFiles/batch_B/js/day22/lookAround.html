@@ -1,0 +1,34 @@
+<script>
+  //look around
+
+  //look ahead
+  // let regex = /\d+(?= rupees)/g;
+  //   let str =
+  //     "I bought 12 bananas for 40 rupees, 1 kg apples for 120 rupees, 1 kg papaya for 40 rupees and 2 kg grapes for 140 rupees.";
+
+  //     let sum = 0;
+  //     let digit = regex.exec(str);
+
+  //     while(digit){
+  //         console.log(digit[0]);
+  //         sum = sum + parseInt(digit[0]);
+  //         digit = regex.exec(str);
+  //     }
+
+  //     console.log("addition is " + sum);
+
+  //look behind
+  let regex = /(?<=\$)\d+/g;
+  let str =
+    "I bought 12 bananas for $40, 1 kg apples for $120, 1 kg papaya for $40 and 2 kg grapes for $140.";
+  let sum = 0;
+  let digit = regex.exec(str);
+
+  while (digit) {
+    console.log(digit[0]);
+    sum = sum + parseInt(digit[0]);
+    digit = regex.exec(str);
+  }
+
+  console.log("expenditure in dollers is " + sum);
+</script>
