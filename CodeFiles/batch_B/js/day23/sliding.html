@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <div>STOP</div>
+    <button>Slide Up</button>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laboriosam
+      assumenda sit dolor repellendus commodi repudiandae repellat reiciendis
+      at, placeat saepe atque aliquid ducimus voluptatum odio doloremque quas
+      natus. Tempore, sunt doloribus quis delectus repellat aut, nobis corporis
+      maxime praesentium dolor omnis animi repellendus qui? Repudiandae
+      voluptatibus esse ullam eius.
+    </p>
+  </body>
+  <script>
+    $("button").css({
+      width: "100%",
+    });
+    $("p").css({
+      border: "2px solid black",
+      padding: "10px",
+      "margin-top": "0",
+      display: "none",
+      overflow: "hidden",
+    });
+
+    $("div").css({
+      "background-color": "red",
+      width: "50px",
+      height: "50px",
+      display: "flex",
+      "align-items": "center",
+      "justify-content": "center",
+      "border-radius": "50%",
+      margin: "auto",
+      "margin-bottom": "20px",
+    });
+
+    //shutter close karanyasathi
+    // $("button").on("click",()=>{
+    //     $('p').slideUp(2000);
+    // });
+
+    // // shutter open karanyasathi
+    // $("button").on("click",()=>{
+    //     $('p').slideDown(2000);
+    // });
+
+    // shutter open/close karanyasathi
+    $("button").on("click", () => {
+      $("p").slideToggle(5000, () => {
+        alert("kahitari zal");
+      });
+    });
+
+    $("div").on("click", () => $("p").stop());
+  </script>
+</html>
+x

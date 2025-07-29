@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nobis.
+    </p>
+    <button>sliding</button>
+  </body>
+
+  <script>
+    const changeColor = () => $("p").css("color", "black");
+    $("button").on("click", () => {
+      $("p").css("color", "red").slideUp(2000).slideDown(2000, changeColor);
+    });
+
+    alert(parseInt(Math.random()*10))
+  </script>
+</html>

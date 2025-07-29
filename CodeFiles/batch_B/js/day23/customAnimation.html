@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.7.1.js"></script>
+    <script defer src="./snake.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #parent{
+            height: 100vh;
+            position: relative;
+            border: 2px solid red;
+        }
+        #snake{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="snake"></div>
+    </div>
+</body>
+
+</html>

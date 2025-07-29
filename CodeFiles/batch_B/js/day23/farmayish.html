@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.7.1.js"></script>
+    <style>
+        button{
+            background-image: url(../../../../Assignments/images/Day4/pokercardjpg.jpg);
+            width: 100px;
+            padding: 20px;
+            color: lightgreen;
+            text-transform: uppercase;
+            font-weight: 700;
+            background-size: 100% 100%;
+        }  
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button>random</button>
+    <div></div>
+</body>
+<script>
+    $("button").on("click", ()=>{
+        let div = $("div");
+        div.animate({
+            width: "100%",
+            opacity: ".3"
+        });
+        div.animate({
+            height: "300px",
+            opacity: ".7"
+        });
+        div.animate({
+            width: "100px",
+            opacity: ".15"
+        });
+        div.animate({
+            height: "100px",
+            opacity: "1"
+        });
+    })
+</script>
+</html>
