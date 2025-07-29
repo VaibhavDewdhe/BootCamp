@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <button>1</button>
+    <button>2</button>
+    <input type="button" value="3" />
+    <input type="button" value="4" />
+    <button>5</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur omnis
+      impedit inventore deleniti explicabo ex iure iusto deserunt at velit
+      ipsam, odio incidunt cumque in enim nulla blanditiis eius repellat
+      molestias quos atque.
+    </p>
+    <input type="text" />
+    <div>lorem10</div>
+  </body>
+  <script>
+    // //select only <button></button>
+    // $("button").on("click", () => alert("btn clicked"));
+    // //select only <input type="button">
+    // $("input:button").on("click", () => alert("btn clicked"));
+
+    // //selects all <input>
+    // $("input").on("click", () => alert("btn clicked"));
+
+    // //selects both <button></button> and <input type="button">
+    // $(":button").on("click", function() {
+    //     $(this).hide();
+    // });
+
+    $("body *").on("click", function () {
+      $(this).hide();
+    });
+  </script>
+</html>

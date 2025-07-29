@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <button>stop animation</button>
+    <div>Slide Up</div>
+    <div id="para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid eaque voluptate fugiat excepturi dicta. Accusamus vel quibusdam sed reiciendis nam consectetur corporis, est non maiores ex quaerat quae rem fuga expedita blanditiis iure, numquam voluptates vero similique tempore quo saepe qui neque. Eaque, aliquid doloremque sint nostrum explicabo debitis minima!
+    </div>
+  </body>
+  <script>
+    $("div").css({
+      "background-color": "gray",
+      color: "white",
+      padding: "10px",
+    });
+
+    let first = $("div:first");
+    first.css({
+      "text-align": "center",
+      "text-transform": "uppercase",
+      color: "brown",
+      "font-weight": "700",
+      border: "2px solid blue",
+    });
+
+    // first.on("click", ()=>{
+    //     $("#para").slideUp(3000);
+    // })
+
+    // $("#para").css("display", "none");
+    // first.on("click", ()=>{
+    //     $("#para").slideDown(3000);
+    // })
+
+    first.on("click", ()=>{
+        $("#para").slideToggle(5000);
+    })
+
+    $("button").on("click",()=>{
+        $("#para").stop();
+    })
+  </script>
+</html>
