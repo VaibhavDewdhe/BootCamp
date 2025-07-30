@@ -52,3 +52,6 @@ $("#lightToggle").on("dblclick", () => {
 
 $("#home").on("mouseenter", lightOn);
 $("#home").on("mouseleave", lightOff);
+
+
+

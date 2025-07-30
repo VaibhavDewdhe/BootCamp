@@ -1,24 +1,45 @@
-$("#parent").on("click", function () {
-    const snake = $("#snake");
-    const parent = $("#parent");
+$(document).ready(function () {
+    const gameBox = $("#game-box");
+    let direction = "right";
+    const step = 20;
+    const speed = 100;
+    const snake = [{ top: 0, left: 0 }];
 
-    const parentWidth = parent.width();
-    const parentHeight = parent.height();
-    const snakeWidth = snake.width();
-    const snakeHeight = snake.height();
-
-    // Ensure starting position
-    snake.stop(true, true).css({ top: 0, left: 0 });
-
-    // Move Right
-    snake.animate({ left: parentWidth - snakeWidth }, 2000, function () {
-        // Move Down
-        snake.animate({ top: parentHeight - snakeHeight }, 2000, function () {
-            // Move Left
-            snake.animate({ left: 0 }, 2000, function () {
-                // Move Up
-                snake.animate({ top: 0 }, 2000);
+    // Create initial snake segment
+    function drawSnake() {
+        gameBox.empty();
+        snake.forEach((segment, i) => {
+            const seg = $("<div class='snake-segment'></div>");
+            seg.css({
+                top: segment.top + "px",
+                left: segment.left + "px",
+                backgroundColor: i === 0 ? "darkgreen" : "green"
             });
+            gameBox.append(seg);
         });
+    }
+
+    // Keyboard direction control
+    $(document).keydown(function (e) {
+        if (e.key === "ArrowUp" && direction !== "down") direction = "up";
+        if (e.key === "ArrowDown" && direction !== "up") direction = "down";
+        if (e.key === "ArrowLeft" && direction !== "right") direction = "left";
+        if (e.key === "ArrowRight" && direction !== "left") direction = "right";
     });
+
+    // Movement logic
+    setInterval(() => {
+        let head = { ...snake[0] };
+
+        switch (direction) {
+            case "right": head.left += step; break;
+            case "left": head.left -= step; break;
+            case "up": head.top -= step; break;
+            case "down": head.top += step; break;
+        }
+
+        snake.unshift(head);         // Add new head
+        snake.pop();                 // Remove tail
+        drawSnake();
+    }, speed);
 });

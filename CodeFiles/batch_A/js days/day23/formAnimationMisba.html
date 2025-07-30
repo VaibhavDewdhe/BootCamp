@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../jquery-3.7.1.js"></script>
+    <style>
+      form {
+        width: 300px;
+        border: 1px solid black;
+        padding: 20px;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="Enter your name" />
+      <input type="email" placeholder="Enter your email" />
+      <input type="passoword" placeholder="Enter your password" />
+      <button>Login</button>
+    </form>
+  </body>
+  <script>
+    $("input").on("blur", function () {
+      $(this).slideUp(1000);
+    });
+
+  </script>
+</html>
