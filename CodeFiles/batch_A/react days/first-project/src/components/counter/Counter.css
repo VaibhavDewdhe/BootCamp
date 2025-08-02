@@ -1,0 +1,14 @@
+div{
+    border: 1px solid black;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    background-color: aquamarine;
+    border-radius: 100%;
+    box-shadow: 20px 20px 20px;
+}
+
+div > h1{
+    margin-top: 60px;
+}
