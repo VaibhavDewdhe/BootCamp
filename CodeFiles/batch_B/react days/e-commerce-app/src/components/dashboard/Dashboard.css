@@ -1,0 +1,16 @@
+#parent{
+    border: 2px solid red;
+    padding: 20px;
+}
+
+#container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container > div{
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px   ;
+}
