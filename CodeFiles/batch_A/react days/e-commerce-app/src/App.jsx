@@ -1,11 +1,10 @@
 import Dashboard from "./components/dashboard/Dashboard"
-import Random from './components/lifecycle/Random'
-function App() {
 
+function App() {
   return (
     <>
-    {/* <Dashboard/> */}
-    <Random/>
+      <Dashboard/>
+      
     </>
   )
 }

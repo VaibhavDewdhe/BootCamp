@@ -13,9 +13,7 @@ export default ()=>{
 
     return <div id="parent">
         <Navbar noOfItems={noOfItems}/>
-        <div id='container'>
-            <ProductList inc={increment}/>
             <CartItems/>
-        </div>
+            <ProductList inc={increment}/>
     </div>
 }

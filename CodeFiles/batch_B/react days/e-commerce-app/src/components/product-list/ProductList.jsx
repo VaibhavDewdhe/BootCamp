@@ -1,28 +1,5 @@
 import Product from "../product/Product"
 
-const product = {
-    name: "Samsung S25",
-    price: 125000
-}
-
-const products = [
-    {
-        id : 1,
-        name: "Samsung S25",
-        price: 125000
-    },
-    {
-        id : 2,
-        name: "Samsung S25",
-        price: 125000
-    },
-    {
-        id : 3,
-        name: "Samsung S25",
-        price: 125000
-    },
-]
-
 
 
 export default ({inc}) => {
