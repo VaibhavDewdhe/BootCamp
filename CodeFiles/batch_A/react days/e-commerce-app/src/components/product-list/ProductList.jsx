@@ -255,12 +255,14 @@ export default () => {
         fetch('https://fakestoreapi.com/products')
             .then(response => response.json())
             .then(data => setProducts(data));
-    },[]);
+    }, []);
 
-    return <div id="prodList">
+    return <div id="PrdListCompo">
         {/* <Product image = {product.image} title={product.title} price={51000}/> */}
         {/* <Product {...products[4]}/> */}
-
-        {products.map((data) => <Product {...data} />)}
+        <h2>Product List</h2>
+        <div id="prodList">
+            {products.map((data) => <Product {...data} />)}
+        </div>
     </div>
 }

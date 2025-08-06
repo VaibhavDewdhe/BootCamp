@@ -3,9 +3,12 @@ import './Product.css'
 export default (props) => {
     return (
         <div id='product'>
-            <img src={props.image} alt="" />
-            <h3>{props.title}</h3>
-            <h5>{props.price}</h5>
+            <div id='mainDetail'>
+                <img src={props.image} alt="" />
+                <h5>{props.price}</h5>
+                <p id='title'>{props.title}</p>
+                <button className='btn btn-primary'>Add to Cart</button>
+            </div>
             <p>{props.description}</p>
         </div>
     )

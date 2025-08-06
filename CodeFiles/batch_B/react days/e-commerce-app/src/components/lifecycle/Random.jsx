@@ -11,6 +11,8 @@ export default () => {
     return <div>
         <h1>Life cycle component</h1>
         <h3>{count}</h3>
-        <button onClick={() => setCount(count + 1)}>+</button>
+        <button onClick={
+            () => setCount(count + 1)
+            }>INCREMENT</button>
     </div>
 }
